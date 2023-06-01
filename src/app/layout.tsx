@@ -19,13 +19,10 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={cn(
-          'min-h-screen font-sans antialiased',
-          fontSans.variable
-        )}
+        className={cn('min-h-screen font-sans antialiased', fontSans.variable)}
       >
         {children}
       </body>

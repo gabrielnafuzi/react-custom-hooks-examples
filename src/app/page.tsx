@@ -1,6 +1,9 @@
 import Link from 'next/link'
 
-const hooks = [{ name: 'useEyeDropper', href: '/use-eye-dropper' }] as const
+const hooks = [
+  { name: 'useEyeDropper', href: '/use-eye-dropper' },
+  { name: 'useMediaQuery', href: '/use-media-query' },
+] as const
 
 export default function Home() {
   return (
